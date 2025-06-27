@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="anymal">
+  <xacro:property name="mass" value="1.0"/>
+
+  <link name="base_link">
+    <inertial>
+      <mass value="${mass}"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="0.1" ixy="0" ixz="0" iyy="0.1" iyz="0" izz="0.1"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <box size="0.5 0.2 0.1"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.5 0.2 0.1"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="fixed_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="dummy_leg"/>
+  </joint>
+
+  <link name="dummy_leg">
+    <visual>
+      <geometry>
+        <cylinder radius="0.02" length="0.3"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <ros2_control name="AnymalSystem" type="system">
+    <hardware>
+      <plugin>fake_components/GenericSystem</plugin>
+    </hardware>
+    <joint name="dummy_joint" command_interfaces="position" state_interfaces="position velocity effort"/>
+  </ros2_control>
+</robot>
