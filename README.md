@@ -156,3 +156,4 @@ If you're editing:
 - `spot_train.py` / `spot_ars_eval.py`: Entry points
 
 Ensure to update this README and test thoroughly.
+[![Watch the video](https://img.shields.io/badge/▶️-Watch_Demo-blue)](https://github.com/cyan-ide7/ros_quadrupedal/blob/main/Screencast%20from%2007-08-2025%2001_01_26%20AM%20(online-video-cutter.com).mp4?raw=true)
