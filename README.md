@@ -156,8 +156,9 @@ If you're editing:
 - `spot_train.py` / `spot_ars_eval.py`: Entry points
 
 Ensure to update this README and test thoroughly.
-<video width="640" height="360" controls>
+[<video width="640" height="360" controls>
   <source src="https://github.com/cyan-ide7/ros_quadrupedal/blob/main/Screencast%20from%2007-08-2025%2001_01_26%20AM%20(online-video-cutter.com).mp4?raw=true" type="video/mp4">
   Your browser does not support the video tag.
-</video>
+</video>](https://github.com/cyan-ide7/ros_quadrupedal/blob/main/Screencast%20from%2007-08-2025%2001_01_26%20AM%20(online-video-cutter.com).mp4?raw=true
+)
 
