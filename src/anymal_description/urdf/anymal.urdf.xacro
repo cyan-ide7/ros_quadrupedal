@@ -35,7 +35,7 @@
 
   <ros2_control name="AnymalSystem" type="system">
     <hardware>
-      <plugin>fake_components/GenericSystem</plugin>
+      <plugin>/GenericSystem</plugin>
     </hardware>
     <joint name="dummy_joint" command_interfaces="position" state_interfaces="position velocity effort"/>
   </ros2_control>
