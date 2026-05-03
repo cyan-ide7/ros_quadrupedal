@@ -73,19 +73,7 @@ Use the filename number with `-a <num>` (e.g. `-a 100`, `-a 149`, etc.)
 
 ---
 
-##  Fixes Made
 
-- Edited `Bezier.py` to fix NumPy error:
-  
-  Replaced:
-  ```python
-  np.math.factorial(...)
-  ```
-  With:
-  ```python
-  import math
-  math.factorial(...)
-  ```
 
 - Installed missing packages:
   ```bash
